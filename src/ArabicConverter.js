@@ -10,16 +10,16 @@ class ArabicConverter extends React.Component {
   };
   render() {
     return (
-      <div style={{ float: "left", margin: "15px 0 15px 0" }}>
+      <div className="input-arabic-parent">
         <label>
           <input
+            className="input-arabic"
             onChange={this.handleChange}
             type="number"
             placeholder="Enter an Arabic number"
-            style={{ width: "163px", float: "left", marginLeft: "15px" }}
           ></input>
         </label>
-        <h2 style={{ float: "left", margin: "0 0 0 5px" }}>
+        <h2 style={{ float: "left", margin: "3px 0 0 5px" }}>
           is Roman: {this.state.roman}
         </h2>
       </div>
