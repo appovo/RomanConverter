@@ -1,23 +1,30 @@
-import React from 'react'
-import toArabic from './toArabic'
+import React from "react";
+import toRoman from "./toRoman";
+import "./index.css";
 
 class ArabicConverter extends React.Component {
-  state = { arabic: 'none' }
+  state = { roman: "" };
   handleChange = (event) => {
-    const roman = event.target.value
-    this.setState({ arabic: toArabic(roman) })
-  }
+    const arabic = event.target.value || "";
+    this.setState({ roman: toRoman(arabic) });
+  };
   render() {
     return (
-      <>
+      <div style={{ float: "left", margin: "15px 0 15px 0" }}>
         <label>
-          Roman:
-          <textarea defaultValue={'Enter Roman number'} onChange={this.handleChange} type="number"></textarea>
+          <input
+            onChange={this.handleChange}
+            type="number"
+            placeholder="Enter an Arabic number"
+            style={{ width: "163px", float: "left", marginLeft: "15px" }}
+          ></input>
         </label>
-        <h1>Arabic: {this.state.arabic}</h1>
-      </>
-    )
+        <h2 style={{ float: "left", margin: "0 0 0 5px" }}>
+          is Roman: {this.state.roman}
+        </h2>
+      </div>
+    );
   }
 }
 
-export default ArabicConverter
+export default ArabicConverter;
