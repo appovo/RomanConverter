@@ -1,5 +1,6 @@
 import React from "react";
 import toArabic from "./toArabic";
+import "./index.css";
 
 class RomanConverter extends React.Component {
   state = { arabic: "" };
@@ -9,16 +10,16 @@ class RomanConverter extends React.Component {
   };
   render() {
     return (
-      <div style={{ float: "left", margin: "15px 0 15px 0" }}>
+      <div className="input-roman-parent">
         <label>
           <input
-            placeholder="Enter a Roman number"
+            className="input-roman"
             onChange={this.handleChange}
             type="string"
-            style={{ float: "left", marginLeft: "150px" }}
+            placeholder="Enter a Roman number"
           ></input>
         </label>
-        <h2 style={{ float: "left", margin: "0 0 0 5px" }}>
+        <h2 style={{ float: "left", margin: "3px 0 0 150px" }}>
           is Arabic: {this.state.arabic || ""}
         </h2>
       </div>
