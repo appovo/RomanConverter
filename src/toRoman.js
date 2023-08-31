@@ -1,5 +1,5 @@
 function toRoman(arabic) {
-  if (arabic == 0 || arabic >= 4000) return 'none'
+  if (arabic === 0 || arabic >= 4000) return "";
   const romanNums = {
     M: 1000,
     CM: 900,
@@ -14,14 +14,14 @@ function toRoman(arabic) {
     V: 5,
     IV: 4,
     I: 1,
-  }
-  let converted = ''
+  };
+  let converted = "";
   for (let i of Object.keys(romanNums)) {
-    let q = Math.floor(arabic / romanNums[i])
-    arabic -= q * romanNums[i]
-    converted += i.repeat(q)
+    let q = Math.floor(arabic / romanNums[i]);
+    arabic -= q * romanNums[i];
+    converted += i.repeat(q);
   }
-  return converted
+  return converted;
 }
 
-export default toRoman
+export default toRoman;
