@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/RomanConverter/static/css/main.e6c13ad2.css",
-    "main.js": "/RomanConverter/static/js/main.0533ae84.js",
+    "main.css": "/RomanConverter/static/css/main.434c8a57.css",
+    "main.js": "/RomanConverter/static/js/main.4fb417b9.js",
     "index.html": "/RomanConverter/index.html",
-    "main.e6c13ad2.css.map": "/RomanConverter/static/css/main.e6c13ad2.css.map",
-    "main.0533ae84.js.map": "/RomanConverter/static/js/main.0533ae84.js.map"
+    "main.434c8a57.css.map": "/RomanConverter/static/css/main.434c8a57.css.map",
+    "main.4fb417b9.js.map": "/RomanConverter/static/js/main.4fb417b9.js.map"
   },
   "entrypoints": [
-    "static/css/main.e6c13ad2.css",
-    "static/js/main.0533ae84.js"
+    "static/css/main.434c8a57.css",
+    "static/js/main.4fb417b9.js"
   ]
 }
